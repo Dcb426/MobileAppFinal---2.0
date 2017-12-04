@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Friend Or Foe</string>
+    <string name="start_a_new_game_or_resume_a_current_game">Start a New Game</string>
+    <string name="welcome_to_friend_or_foe">WELCOME TO FRIEND OR FOE</string>
+    <string name="new_game">New Game</string>
+    <string name="current_games">Current Games</string>
+    <string name="start_game">Start Game</string>
+    <string name="credits">Credits</string>
+    <string name="how_to_play">How To Play</string>
+    <string name="todo">TODO</string>
+    <string name="tanner_t_and_the_charlie_boys">Tanner T and The Charlie Boys</string>
+    <string name="enter_nickname">" Enter NickName"</string>
+    <string name="enter_phone">"  Enter Phone #"</string>
+    <string name="_972_164_4652">972-164-4652</string>
+    <string name="add_player">Add Player</string>
+</resources>
