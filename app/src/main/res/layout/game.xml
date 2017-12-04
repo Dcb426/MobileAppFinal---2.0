@@ -8,13 +8,10 @@
 
     <TabHost
         android:id="@+id/TabHostj"
-        android:layout_width="383dp"
-        android:layout_height="510dp"
+        android:layout_width="414dp"
+        android:layout_height="593dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.52">
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,6 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@android:color/background_light"
+                android:gravity="center"
                 android:orientation="horizontal">
 
             </TabWidget>
@@ -41,119 +39,97 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/spacer1"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:textAllCaps="false"
-                        android:textStyle="italic" />
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/Name"
-                        android:layout_width="match_parent"
-                        android:layout_height="42dp"
-                        android:background="@android:color/background_light"
-                        android:fontFamily="monospace"
-                        android:text="@string/enter_nickname"
-                        android:textAlignment="viewStart"
-                        android:textAllCaps="true"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                        android:textSize="24sp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toStartOf="parent"
-                        tools:layout_editor_absoluteY="107dp" />
+                        <TextView
+                            android:id="@+id/Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/background_light"
+                            android:text="@string/enter_nickname"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textSize="30sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:layout_editor_absoluteY="107dp" />
 
-                    <TextView
-                        android:id="@+id/spacer5"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp" />
+                        <EditText
+                            android:id="@+id/nameText"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorAccent"
+                            android:backgroundTintMode="src_over"
+                            android:ems="10"
+                            android:hint="@string/player1"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textSize="30sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.506"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:layout_editor_absoluteY="173dp" />
 
-                    <EditText
-                        android:id="@+id/nameText"
-                        android:layout_width="match_parent"
-                        android:layout_height="45dp"
-                        android:background="@drawable/edittexxtt"
-                        android:backgroundTintMode="src_over"
-                        android:ems="10"
-                        android:hint="@string/tanner_t_and_the_charlie_boys"
-                        android:inputType="textPersonName"
-                        android:textAlignment="center"
-                        android:textSize="20sp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.506"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        tools:layout_editor_absoluteY="173dp" />
+                        <TextView
+                            android:id="@+id/EPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="25dp"
+                            android:background="@android:color/background_light"
+                            android:text="@string/enter_phone"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textSize="30sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.505"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:layout_editor_absoluteY="298dp" />
 
-                    <TextView
-                        android:id="@+id/spacer2"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp" />
+                        <EditText
+                            android:id="@+id/phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@color/colorAccent"
+                            android:backgroundTintMode="src_over"
+                            android:ems="10"
+                            android:hint="@string/_972_439_7977"
+                            android:inputType="phone"
+                            android:textAlignment="center"
+                            android:textSize="30sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.505"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:layout_editor_absoluteY="359dp" />
 
-                    <TextView
-                        android:id="@+id/EPhone"
-                        android:layout_width="373dp"
-                        android:layout_height="42dp"
-                        android:background="@android:color/background_light"
-                        android:backgroundTintMode="src_over"
-                        android:text="@string/enter_phone"
-                        android:textAlignment="textStart"
-                        android:textAllCaps="true"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                        android:textSize="24sp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.505"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        tools:layout_editor_absoluteY="298dp" />
-
-                    <TextView
-                        android:id="@+id/spacer6"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp" />
-
-                    <EditText
-                        android:id="@+id/phone"
-                        android:layout_width="match_parent"
-                        android:layout_height="42dp"
-                        android:background="@drawable/edittexxtt"
-                        android:backgroundTintMode="src_over"
-                        android:ems="10"
-                        android:hint="@string/_972_164_4652"
-                        android:inputType="phone"
-                        android:textAlignment="center"
-                        android:textSize="24sp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.505"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        tools:layout_editor_absoluteY="359dp" />
-
-                    <TextView
-                        android:id="@+id/spacer4"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:background="@android:color/background_light"
-                        android:textColor="@android:color/holo_red_dark" />
+                    </LinearLayout>
 
                     <Button
                         android:id="@+id/angry_btn"
-
-                        android:layout_width="200dp"
+                        android:layout_width="150dp"
                         android:layout_height="60dp"
-                        android:layout_marginStart="100dp"
-                        android:background="@drawable/buttonshape"
-                        android:shadowColor="#A8A8A8"
-                        android:shadowDx="0"
-                        android:shadowDy="0"
-                        android:shadowRadius="10"
-                        android:text="Add Player"
-                        android:textColor="#FFFFFF"
-                        android:textSize="30sp" />
+                        android:layout_marginStart="130dp"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/edittexxtt"
+                        android:elevation="18dp"
+                        android:text="@string/add"
+                        android:textAlignment="center"
+                        android:textColor="?attr/colorControlNormal"
+                        android:textSize="24sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -180,12 +156,16 @@
 
                     <Button
                         android:id="@+id/Starter"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/buttonshape"
-                        android:text="Start Game"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="30sp"
+                        android:layout_width="200dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="110dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/edittexxtt"
+                        android:elevation="18dp"
+                        android:text="@string/start_game"
+                        android:textAlignment="center"
+                        android:textColor="?attr/colorControlNormal"
+                        android:textSize="24sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
