@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mobile_final.friendorfoe">
+    package="com.mobile_final.friendorfoe" android:versionCode="1" android:versionName="1.0" >
 
-    <uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
+    <uses-sdk android:minSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
 
     <application
         android:allowBackup="true"
@@ -28,7 +29,7 @@
             <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".Start_Up">
             </meta-data>
         </activity>
-        <activity android:name=".viewStudentActivity"></activity>
+        <activity android:name=".viewStudentActivity"/>
         <activity android:name=".Gameplay.SendMessage" android:parentActivityName=".gamelogic" >
             <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".gamelogic">
             </meta-data>
