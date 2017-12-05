@@ -5,47 +5,88 @@
     android:id="@+id/laylay"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="com.mobile_final.friendorfoe.Start_Up">
 
-    <Button
-        android:id="@+id/Start_Gme"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="@string/start_game"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-        android:textSize="40sp"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/How_To_Play"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="@string/how_to_play"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-        android:textSize="40sp"
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="325dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Start_Gme" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3">
 
-    <Button
-        android:id="@+id/Credits"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="@string/credits"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-        android:textSize="40sp"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/How_To_Play" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/Start_game"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:background="@drawable/ya"
+                android:contentDescription="@string/todo"
+                android:elevation="13dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/dd" />
+
+            <ImageButton
+                android:id="@+id/How_to_play1"
+                android:layout_width="42dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:background="@drawable/ya"
+                android:contentDescription="@string/todo"
+                android:elevation="24dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/kk" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="?android:attr/webTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteY="164dp">
+
+            <ImageButton
+                android:id="@+id/Settings"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/ya"
+                android:contentDescription="@string/todo"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/lld" />
+
+            <ImageButton
+                android:id="@+id/Credits"
+                android:layout_width="117dp"
+                android:layout_height="127dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/ya"
+                android:contentDescription="@string/todo"
+                android:cropToPadding="false"
+                android:elevation="16dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/kak" />
+
+        </LinearLayout>
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
