@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mobile_final.friendorfoe.viewStudentActivity">
+    tools:context="com.example.friendorfoe.viewStudentActivity">
 
     <LinearLayout
         android:id="@+id/tab1"

@@ -3,7 +3,7 @@
     android:id="@+id/studentLayout"
     android:layout_width="match_parent"
     android:layout_height="60dp"
-    tools:context="com.mobile_final.friendorfoe.PlayerFragment">
+    tools:context="com.example.friendorfoe.PlayerFragment">
 
     <LinearLayout
         android:layout_width="match_parent"

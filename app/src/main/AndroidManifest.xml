@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mobile_final.friendorfoe" android:versionCode="1" android:versionName="1.0" >
+    package="com.example.friendorfoe" android:versionCode="1" android:versionName="1.0" >
 
     <uses-sdk android:minSdkVersion="10" />
 
     <uses-permission android:name="android.permission.RECEIVE_SMS"/>
     <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -14,26 +15,41 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Start_Up" android:screenOrientation="portrait">
+        <activity android:name="com.example.friendorfoe.launcher"  >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Credits" android:parentActivityName=".Start_Up" >
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".Start_Up">
+        <activity android:name="com.example.friendorfoe.Start_Up" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.example.friendorfoe.Credits" android:parentActivityName="com.example.friendorfoe.Start_Up" android:screenOrientation="portrait" >
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.friendorfoe.Start_Up">
         </meta-data>
         </activity>
-        <activity android:name=".gamelogic" android:parentActivityName=".Start_Up" >
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".Start_Up">
+        <activity android:name="com.example.friendorfoe.gamelogic" android:parentActivityName="com.example.friendorfoe.Start_Up" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.friendorfoe.Start_Up">
             </meta-data>
         </activity>
-        <activity android:name=".viewStudentActivity"/>
-        <activity android:name=".Gameplay.SendMessage" android:parentActivityName=".gamelogic" >
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".gamelogic">
+        <activity android:name="com.example.friendorfoe.viewStudentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.friendorfoe.Gameplay.SendMessage" android:parentActivityName="com.example.friendorfoe.gamelogic" android:screenOrientation="portrait" >
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.friendorfoe.gamelogic">
             </meta-data>
         </activity>
+        <activity android:name="com.example.friendorfoe.Gameplay.murderfound"  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.example.friendorfoe.Gameplay.whogotkilled" android:parentActivityName="com.example.friendorfoe.Gameplay.murderfound" android:screenOrientation="portrait" >
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.friendorfoe.Gameplay.murderfound">
+            </meta-data>
+        </activity>
+        <activity android:name="com.example.friendorfoe.Gameplay.votedofftheisland" android:screenOrientation="portrait"  >
+        </activity>
+        <activity android:name="com.example.friendorfoe.help" android:screenOrientation="portrait"  >
+        </activity>
+        <activity android:name="com.example.friendorfoe.Gameplay.murderfoundv2"  android:screenOrientation="portrait">
+        </activity>
+
     </application>
 
 </manifest>

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context="com.mobile_final.friendorfoe.Start_Up">
+    tools:context="com.example.friendorfoe.Start_Up">
 
     <LinearLayout
         android:layout_width="395dp"
